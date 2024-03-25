@@ -1,0 +1,49 @@
+* {
+  font-weight: 400;
+  font-family: 'Montserrat';
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  text-align: center;
+  color: $black;
+}
+
+h1,
+.h1 {
+  font-size: 60px;
+  margin: 0 0 52px;
+
+  @media (max-width: $tablet) {
+    font-size: 48px;
+    margin: 0 0 32px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 24px;
+    margin: 0 0 12px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+  margin: 0 0 28px;
+
+  @media (max-width: $tablet) {
+    font-size: 28px;
+    margin: 0 0 24px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 20px;
+    margin: 0 0 16px;
+  }
+}
+
+a {
+  color: $light-blue;
+  text-decoration: none;
+}

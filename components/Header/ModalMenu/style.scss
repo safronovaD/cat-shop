@@ -1,0 +1,35 @@
+.modal-menu {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (max-width: $mobile) {
+      gap: 20px;
+    }
+  }
+
+  &__phone {
+    display: none;
+
+    @media (max-width: $tablet) {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: $brown;
+    }
+  }
+
+  &__icon {
+    font-size: 24px;
+    color: inherit;
+  }
+
+  &__login {
+    display: none;
+
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+}

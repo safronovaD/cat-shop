@@ -1,0 +1,21 @@
+$path-fonts-neucha: '/assets/fonts/Neucha';
+$path-fonts-montserrat: '/assets/fonts/Montserrat';
+
+@font-face {
+  font-family: 'Neucha';
+  src: local('Neucha'), url('#{$path-fonts-neucha}/Neucha-Regular.woff2') format('woff2'), url('#{$path-fonts-neucha}/Neucha-Regular.woff') format('woff'), url('#{$path-fonts-neucha}/Neucha-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url('#{$path-fonts-montserrat}/Montserrat-Regular.woff2') format('woff2'), url('#{$path-fonts-montserrat}/Montserrat-Regular.woff') format('woff'), url('#{$path-fonts-montserrat}/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url('#{$path-fonts-montserrat}/Montserrat-Bold.woff2') format('woff2'), url('#{$path-fonts-montserrat}/Montserrat-Bold.woff') format('woff'), url('#{$path-fonts-montserrat}/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

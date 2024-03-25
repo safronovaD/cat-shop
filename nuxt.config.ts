@@ -9,8 +9,18 @@ export default defineNuxtConfig({
   },
   modules: [
     '@pinia/nuxt',
+    'nuxt-icons'
   ],
   css: [
     '@/assets/styles/styles.scss'
-  ]
+  ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "assets/styles/common/variables.scss";',
+        },
+      },
+    },
+  },
 })

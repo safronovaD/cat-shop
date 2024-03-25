@@ -1,0 +1,122 @@
+.header {
+  background-color: $blue;
+  padding: 20px 0;
+
+  @media (max-width: $big-tablet) {
+    padding: 16px 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-height: 40px;
+  }
+
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 162px;
+    height: 162px;
+    margin-top: 56px;
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+
+    @media (max-width: $big-tablet) {
+      width: auto;
+      height: auto;
+      margin: 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  &__logo {
+    width: 76px;
+    height: 118px;
+
+    @media (max-width: $big-tablet) {
+      width: 97px;
+      height: 43px;
+    }
+  }
+
+  &__menu {
+    @media (max-width: $big-tablet) {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: $white;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__number {
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    font-size: 24px;
+    color: inherit;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: $white;
+    border-radius: 50%;
+    cursor: pointer;
+    color: $black;
+    margin-right: 24px;
+    transition: background-color $transition-duration linear;
+
+    @media (max-width: $tablet) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: $beige;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @media (max-width: $big-tablet) {
+      display: inline;
+      font-size: 24px;
+      color: $white;
+      cursor: pointer;
+      margin-right: 12px;
+    }
+  }
+
+  &__login {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
