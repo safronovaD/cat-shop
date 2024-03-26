@@ -2,15 +2,15 @@
   <header class="header">
     <div class="header__container container">
       <div class="header__wrapper">
-        <nuxt-icon name="burger-menu" class="header__burger" @click="showModalMenu = true"/>
+        <nuxt-icon name="burger-menu" class="header__burger" @click="showModalNav = true"/>
         <div class="header__circle">
           <picture>
-            <source media="(max-width: 1000px)" srcset="assets/images/logo-mobile.png">
-            <img class="header__logo" src="assets/images/logo-desktop.png" alt="Cat shop">
+            <source media="(max-width: 1000px)" srcset="assets/images/logo-mobile.svg">
+            <img class="header__logo" src="assets/images/logo-desktop.svg" alt="Cat shop">
           </picture>
         </div>
       </div>
-      <Menu class="header__menu"/>
+      <Nav class="header__menu"/>
       <a href="tel:+71112223344" class="header__phone">
         <nuxt-icon name="phone" class="header__icon"/>
         <span class="header__number">+7 (111)-222-33-44</span>
@@ -22,17 +22,17 @@
         <Button :text="'Войти'" class="header__login"/>
       </div>
     </div>
-    <ModalMenu v-if="showModalMenu === true" @close="showModalMenu = false"/>
+    <ModalNav v-if="showModalNav === true" @close="showModalNav = false"/>
   </header>
 </template>
 
 <script lang="ts" setup>
-import Menu from "./Menu/Menu.vue";
+import Nav from "./Nav/Nav.vue";
 import Button from "~/components/Button/Button.vue";
-import ModalMenu from "./ModalMenu/ModalMenu.vue";
+import ModalNav from "./ModalNav/ModalNav.vue";
 import {ref} from "@vue/reactivity";
 
-let showModalMenu = ref<boolean>(false);
+let showModalNav = ref<boolean>(false);
 </script>
 
 <style src="./style.scss" lang="scss" scoped/>

@@ -7,23 +7,53 @@ h1,
 .h1,
 h2,
 .h2 {
+  font-family: 'Neucha';
   text-align: center;
-  color: $black;
+  color: $brown;
 }
 
 h1,
 .h1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 40px;
   font-size: 60px;
   margin: 0 0 52px;
+  text-transform: uppercase;
 
-  @media (max-width: $tablet) {
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: $brown;
+    border-radius: 50%;
+
+    @media (max-width: $mobile) {
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  @media (max-width: $big-tablet) {
+    gap: 32px;
     font-size: 48px;
     margin: 0 0 32px;
+  }
+
+
+  @media (max-width: $tablet) {
+
   }
 
   @media (max-width: $mobile) {
     font-size: 24px;
     margin: 0 0 12px;
+    gap: 12px;
   }
 }
 
@@ -32,7 +62,7 @@ h2,
   font-size: 32px;
   margin: 0 0 28px;
 
-  @media (max-width: $tablet) {
+  @media (max-width: $big-tablet) {
     font-size: 28px;
     margin: 0 0 24px;
   }

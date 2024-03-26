@@ -30,7 +30,7 @@
     background-color: $beige;
     z-index: 2;
 
-    @media (max-width: $tablet) {
+    @media (max-width: $big-tablet) {
       padding: 24px;
     }
 
