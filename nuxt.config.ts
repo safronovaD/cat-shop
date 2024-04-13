@@ -9,7 +9,9 @@ export default defineNuxtConfig({
   },
   modules: [
     '@pinia/nuxt',
-    'nuxt-icons'
+    '@nuxt/image',
+    'nuxt-icons',
+    'nuxt-swiper'
   ],
   css: [
     '@/assets/styles/styles.scss'

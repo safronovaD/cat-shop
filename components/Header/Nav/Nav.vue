@@ -2,7 +2,7 @@
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item">
-        <nuxt-link class="nav__link" to="/" activeClass="nav__link--active">Меню</nuxt-link>
+        <nuxt-link class="nav__link" to="/menu/rolls" activeClass="nav__link--active">Меню</nuxt-link>
       </li>
       <li class="nav__item">
         <nuxt-link class="nav__link" to="/" activeClass="nav__link--active">Доставка</nuxt-link>

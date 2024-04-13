@@ -1,5 +1,7 @@
 <template>
-  <h1>catalog</h1>
+  <div class="main-page">
+    <h1>Главная</h1>
+  </div>
 </template>
 
 <script lang="ts" setup>

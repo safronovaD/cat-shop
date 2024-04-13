@@ -16,7 +16,7 @@
 <script lang="ts" setup>
 import Modal from "~/components/Modal/Modal.vue";
 import Nav from "../Nav/Nav.vue";
-import Button from "~/components/Button/Button.vue";
+import Button from "~/components/buttons/Button/Button.vue";
 </script>
 
 <style src="./style.scss" lang="scss" scoped/>

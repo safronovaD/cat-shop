@@ -1,0 +1,21 @@
+.menu-page {
+  &__catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(266px, 1fr));
+    gap: 32px;
+    margin-top: 60px;
+
+    @media (max-width: $pre-tablet) {
+      gap: 24px;
+    }
+
+    @media (max-width: $big-tablet) {
+      margin-top: 20px;
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 12px;
+    }
+  }
+}

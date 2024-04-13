@@ -5,7 +5,7 @@
         <nuxt-icon name="burger-menu" class="header__burger" @click="showModalNav = true"/>
         <div class="header__circle">
           <picture>
-            <source media="(max-width: 1000px)" srcset="assets/images/logo-mobile.svg">
+            <source media="(max-width: 980px)" srcset="assets/images/logo-mobile.svg">
             <img class="header__logo" src="assets/images/logo-desktop.svg" alt="Cat shop">
           </picture>
         </div>
@@ -28,7 +28,7 @@
 
 <script lang="ts" setup>
 import Nav from "./Nav/Nav.vue";
-import Button from "~/components/Button/Button.vue";
+import Button from "~/components/buttons/Button/Button.vue";
 import ModalNav from "./ModalNav/ModalNav.vue";
 import {ref} from "@vue/reactivity";
 

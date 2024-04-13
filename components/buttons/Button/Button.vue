@@ -14,11 +14,17 @@
    },
    color: {
      type: String,
-     default: 'white'
+     default: 'white',
+     validator: function(value: String) {
+       return ['white', 'brown'].includes(value);
+     }
    },
    width: {
      type: String,
-     default: 'narrow'
+     default: 'narrow',
+     validator: function(value: String) {
+       return ['narrow', 'wide'].includes(value);
+     }
    },
  })
 </script>
@@ -27,14 +33,22 @@
   .button {
     width: fit-content;
     background-color: $white;
-    border-radius: 30px;
-    padding: 12px 30px 10px 30px;
+    border-radius: $border-radius;
+    padding: 12px 24px;
+    font-size: 16px;
     color: $black;
     border: none;
     cursor: pointer;
-    font-weight: bold;
     box-shadow: $box-shadow;
     transition: background-color $transition-duration linear;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+    }
 
     &:hover {
       background-color: $beige;
