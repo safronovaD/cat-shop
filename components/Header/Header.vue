@@ -31,8 +31,19 @@ import Nav from "./Nav/Nav.vue";
 import Button from "~/components/buttons/Button/Button.vue";
 import ModalNav from "./ModalNav/ModalNav.vue";
 import {ref} from "@vue/reactivity";
+import {useRoute} from "vue-router";
+import {watch} from "@vue/runtime-core";
+
+const route = useRoute();
 
 let showModalNav = ref<boolean>(false);
+
+watch(
+    () => route.path,
+    () => {
+      showModalNav.value = false;
+    }
+)
 </script>
 
 <style src="./style.scss" lang="scss" scoped/>
