@@ -59,6 +59,7 @@
   &__link {
     color: $white;
     transition: all $transition-duration linear;
+    position: relative;
 
     @media (max-width: $big-tablet) {
       color: $brown;
@@ -69,18 +70,28 @@
       font-size: 16px;
     }
 
-    &:hover {
-      color: $beige;
-      text-decoration: underline;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      display: block;
+      width: 0%;
+      height: 1px;
+      background-color: $white;
+      border-radius: 50%;
+      transition: width $transition-duration linear;
 
       @media (max-width: $big-tablet) {
-        color: $brown;
+        background-color: $brown;
       }
     }
 
-    &--active {
-      text-decoration: underline;
-      font-weight: 700;
+    &--active,
+    &:hover {
+      &:after {
+        width: 100%;
+      }
     }
   }
 }
